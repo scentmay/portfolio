@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Bienvenido
+{% endblock %}
+
+{% block content %}
+<!-- panel hero, donde decimos de qué va esto -->
+<div class="hero">
+    <div class="hero-content">
+        <div class="left">
+            <h1>Soy desarrollador</h1>
+            <h1>Sergio Centenera</h1>
+            <p>Construyo aplicaciones con múltiples lenguajes utilizando bases de datos relacionales</p>
+            <a href="#contacto" class="btn">Contáctame</a>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('static', filename='data.png') }}" width="600px" />
+        </div>
+    </div>
+</div>
+{% include 'portfolio/section-first.html' %}
+{% include 'portfolio/section-second.html' %}
+{% include 'portfolio/section-third.html' %}
+{% endblock %}
